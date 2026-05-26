@@ -4,15 +4,18 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](LICENSE)
 [![Python Version](https://img.shields.io/badge/python-3.8%20%7C%203.9%20%7C%203.10%20%7C%203.11%20%7C%203.12-blue?style=flat-square)](https://pypi.org/project/imei-info/)
 
-The official, modern, fully typed Python client library for the **IMEI.info API v5**. 
+The official, modern, fully typed Python client library for the **IMEI.info API v5** — the ultimate global **IMEI checker API** for developers.
 
-This SDK supports both **synchronous** and **asynchronous** requests using `httpx`, provides 100% type safety via Python type-hints, and implements structured exception handling for quick integration and high reliability.
+Integrate the high-performance **IMEI check API** into your Python backend, Django/FastAPI web services, trade-in systems, or wholesale ERP solutions. Perform instant **IMEI check** and **IMEI lookup** requests to fetch comprehensive mobile device data from our global **TAC (Type Allocation Code)** catalog and **TAC database**. Retrieve real-time **blacklist check** details, check complete **blacklist status (carrier lock, phone block)**, verify Find My iPhone **iCloud check** states, and identify **FRP bypass status (Google Factory Reset Protection)** to secure your trade-in and recycling pipelines.
 
 ---
 
-## ⚡ Features
+## ⚡ Supported IMEI Check API Features & Services
 
 * **Dual Client Design**: `ImeiClient` for sync environments, `AsyncImeiClient` for highly efficient async applications.
+* **Instant Blacklist & Carrier Verification**: Query global databases to check GSMA status, perform a **blacklist check** or discover a device's exact **blacklist status (carrier lock, phone block)**.
+* **Apple & Android Security Lock Checking**: Instantly execute an **iCloud check** to find Find My iPhone status, or verify **FRP bypass status (Google Factory Reset Protection)** to prevent locked device trade-ins.
+* **TAC Identification**: Match device model names, brands, and technical specs automatically from the official **TAC database**.
 * **100% Type-Safe**: Fully typed data models (`ImeiCheckResponse`) and Enums.
 * **Structured Exceptions**: Specific Python classes for API errors:
   * `ImeiAuthenticationError` (HTTP 401 — Invalid API key)
